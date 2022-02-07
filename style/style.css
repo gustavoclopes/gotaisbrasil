@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*
+Link App: https://play.google.com/store/apps/details?id=com.gotaisiot
+
+*/
+:root{
+    --cor00: white;
+    --cor01: #58CBFC;
+    --cor02: #54C1EF;
+    --cor03: #4BACD6;
+    --cor04: #3E8EB0;
+    --cor05: #275A70;
+    --cor-shadow: rgba(0, 0, 0, 0.418);
+    --font-handwriting01: 'Dancing Script', cursive;
+    --font-roboto01: 'Roboto', sans-serif;
+}
+main{
+    background-color: #58cbfc59;
+    
+}
+header{
+    text-align: center;
+    padding: 15px 0px 0px 0px;
+    background-image: linear-gradient(to top, var(--cor04), var(--cor03));
+}
+header .img-logo{
+    max-width: 20%;
+    min-width: 135px;
+    text-shadow: 0px 2px 2px var(--cor-shadow);
+}
+header p{
+    font-family: var(--font-handwriting01);
+    font-size: 22px;
+    letter-spacing: 3px;
+    padding: 5px 0px;
+    color: var(--cor01);
+    text-shadow: 0px 2px 2px var(--cor-shadow);
+}
+nav{
+    padding: 10px;
+    background-color: var(--cor04);
+    box-shadow: 0px 4px 3.5px var(--cor-shadow);
+}
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    font-family: var(--font-roboto01);
+    font-weight: bold;
+    color: var(--cor01);
+    text-shadow: 0px 2px 2px var(--cor-shadow);
+}
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.445);
+    border-radius: 15px;
+    transition: 0.5s;
+    color: var(--cor04);
+    text-shadow: 0px 1px 1px var(--cor-shadow);
+}
+main{
+    min-height: 1000px;
+}
+.presentation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.telepoco, .agua40, .app{
+    margin: 20px;
+    background-color: azure;
+    width: 300px;
+    min-height: 300px;
+    padding: 20px;
+    text-align: center;
+    font-family: var(--font-roboto01);
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px var(--cor01);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.telepoco h2, .agua40 h2, .app h2{
+    color: var(--cor01);
+    text-shadow: 0px 1px 2px var(--cor-shadow);
+    padding: 10px;
+}
+.telepoco p, .agua40 p, .app p{
+    text-shadow: 0px 1px 0px var(--cor-shadow);
+    padding: 10px;
+}
+.telepoco a, .agua40 a, .app a{
+    text-decoration: none;
+    background-color: var(--cor01);
+    color: var(--cor00);
+    padding: 15px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+.presentation a:hover{
+    background-color: var(--cor03);
+    transition: 0.5s;
+    box-shadow: 0px 0px 15px var(--cor01);
+}
+@media screen and (max-width: 550px){
+    .presentation{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-image: linear-gradient(to top, var(--cor04), var(--cor03));
+}
+footer p{
+    font-family: var(--font-roboto01);
+    color: var(--cor00);
+    text-shadow: 0px 1px 2px var(--cor-shadow);
+}
